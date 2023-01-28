@@ -1,5 +1,5 @@
 def square(r):
-    s = r*r
+    s = r**2
     import math
     math.ceil(s)
     print(math.ceil(s))
