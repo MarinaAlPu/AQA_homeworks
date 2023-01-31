@@ -1,16 +1,26 @@
-year = input("Год: ")
-year = int(year)
+# year = input("Год: ")
+# year = int(year)
 
+# def is_year_leap(year):
+#     if (year % 4 == 0):
+#         x = True
+#     else:
+#         x = False
+#     return x
+
+# result = is_year_leap(year)    
+# print("год ", year, ":", result)
+
+# меньше строк
 def is_year_leap(year):
     if (year % 4 == 0):
         x = True
     else:
         x = False
     return x
-
-result = is_year_leap(year)    
-print("год ", year, ":", result)
-
+    
+year = input("Год: ")  
+print("Год ", year, ":", is_year_leap(int(year)))
 
 # С ПРОВЕРКОЙ НА ОТРИЦАТЕЛЬНОСТЬ
 # year = input("Год: ")
