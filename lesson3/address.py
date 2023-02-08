@@ -1,12 +1,15 @@
 class Address:
     def __init__(self, city, street, house, apartment):
-        # self.index = index
+        #self.index = index
         self.city = city
         self.street = street
         self.house = house
         self.apartment = apartment
+# можно тут собирать нужное поле для передачи в итоговую фразу
+        self.mail_address = self.city + ", " + self.street + ", " + self.house + " - " + self.apartment
     def myAddress(self):
-        return (self.city + ", " + self.street + ", " + self.house + " - " + self.apartment)
+#        return (self.city + ", " + self.street + ", " + self.house + " - " + self.apartment)
+        return self.mail_address
 
 class Mailing:
     def __init__(self, address_to, address_from, cost, track):
