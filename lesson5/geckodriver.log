@@ -1,0 +1,230 @@
+1676240478499	geckodriver	INFO	Listening on 127.0.0.1:63842
+1676240481559	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63843" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofilejqac0W"
+1676240481846	Marionette	INFO	Marionette enabled
+1676240481849	Marionette	INFO	Listening on port 63856
+WebDriver BiDi listening on ws://localhost:63843
+Read port: 63856
+1676240481928	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofilejqac0W\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:63843/devtools/browser/5d5a1f19-7b36-4764-9f63-69329fcb40bd
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676240510142	Marionette	INFO	Stopped listening on port 63856
+1676241189675	geckodriver	INFO	Listening on 127.0.0.1:65096
+1676241192737	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65097" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofilezvbg4z"
+1676241193027	Marionette	INFO	Marionette enabled
+1676241193031	Marionette	INFO	Listening on port 65107
+WebDriver BiDi listening on ws://localhost:65097
+Read port: 65107
+1676241193109	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofilezvbg4z\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65097/devtools/browser/8f1018b1-7ab5-419f-8734-13627e5b19d2
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676241223844	Marionette	INFO	Stopped listening on port 65107
+!!! error running onStopped callback: TypeError: callback is not a function
+1676241227019	geckodriver	INFO	Listening on 127.0.0.1:65274
+1676241230070	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65275" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofilergQurB"
+1676241230410	Marionette	INFO	Marionette enabled
+1676241230414	Marionette	INFO	Listening on port 65288
+WebDriver BiDi listening on ws://localhost:65275
+Read port: 65288
+1676241230626	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofilergQurB\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:65275/devtools/browser/06a2c3a9-0fa3-45d1-bfbd-c33a11985827
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676241250558	Marionette	INFO	Stopped listening on port 65288
+1676241396239	geckodriver	INFO	Listening on 127.0.0.1:49282
+1676241399283	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49283" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileg4jLjc"
+1676241399573	Marionette	INFO	Marionette enabled
+1676241399577	Marionette	INFO	Listening on port 49293
+WebDriver BiDi listening on ws://localhost:49283
+Read port: 49293
+1676241399658	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileg4jLjc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49283/devtools/browser/3e72e995-03bd-4355-a258-eee269a86d3f
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676241410997	Marionette	INFO	Stopped listening on port 49293
+1676241738857	geckodriver	INFO	Listening on 127.0.0.1:50188
+1676241741936	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50189" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileAH4Qy8"
+1676241742305	Marionette	INFO	Marionette enabled
+1676241742309	Marionette	INFO	Listening on port 50211
+WebDriver BiDi listening on ws://localhost:50189
+Read port: 50211
+1676241742477	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileAH4Qy8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50189/devtools/browser/574f89ae-f440-4897-b9fd-758799c1190e
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676241753900	Marionette	INFO	Stopped listening on port 50211
+1676242021939	geckodriver	INFO	Listening on 127.0.0.1:50769
+1676242024990	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50770" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofile1t6Rnt"
+1676242025903	Marionette	INFO	Marionette enabled
+1676242025906	Marionette	INFO	Listening on port 50782
+WebDriver BiDi listening on ws://localhost:50770
+Read port: 50782
+1676242026079	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofile1t6Rnt\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50770/devtools/browser/2cc907e2-a8fc-4340-9262-4b5faba5da97
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676242037442	Marionette	INFO	Stopped listening on port 50782
+1676242695511	geckodriver	INFO	Listening on 127.0.0.1:51969
+1676242698583	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51970" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileBpoJ56"
+1676242698882	Marionette	INFO	Marionette enabled
+1676242698885	Marionette	INFO	Listening on port 51980
+WebDriver BiDi listening on ws://localhost:51970
+Read port: 51980
+1676242698969	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileBpoJ56\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51970/devtools/browser/b738766c-9d11-40f5-add4-7fb72155d285
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676242712094	Marionette	INFO	Stopped listening on port 51980
+1676242809421	geckodriver	INFO	Listening on 127.0.0.1:52287
+1676242812468	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52288" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileTXWuTl"
+1676242812750	Marionette	INFO	Marionette enabled
+1676242812753	Marionette	INFO	Listening on port 52315
+WebDriver BiDi listening on ws://localhost:52288
+Read port: 52315
+1676242812834	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileTXWuTl\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52288/devtools/browser/d4d1cf57-ff02-4946-9311-34113d260f20
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676242824239	Marionette	INFO	Stopped listening on port 52315
+1676242859132	geckodriver	INFO	Listening on 127.0.0.1:52491
+1676242862207	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52492" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileTy5pDi"
+1676242862485	Marionette	INFO	Marionette enabled
+1676242862488	Marionette	INFO	Listening on port 52502
+WebDriver BiDi listening on ws://localhost:52492
+Read port: 52502
+1676242862577	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileTy5pDi\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52492/devtools/browser/fc1b631e-c296-4c60-a3c3-057672c5d727
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676242873987	Marionette	INFO	Stopped listening on port 52502
+1676242894237	geckodriver	INFO	Listening on 127.0.0.1:52665
+1676242897295	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52666" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofilepXO3iM"
+1676242897577	Marionette	INFO	Marionette enabled
+1676242897580	Marionette	INFO	Listening on port 52676
+WebDriver BiDi listening on ws://localhost:52666
+Read port: 52676
+1676242897661	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofilepXO3iM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52666/devtools/browser/4b8bb4c0-b6f4-4dc6-81db-99e8bb0610cc
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676242908919	Marionette	INFO	Stopped listening on port 52676
+1676243001025	geckodriver	INFO	Listening on 127.0.0.1:52932
+1676243004086	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52933" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofile2AHKu5"
+1676243004358	Marionette	INFO	Marionette enabled
+1676243004361	Marionette	INFO	Listening on port 52956
+WebDriver BiDi listening on ws://localhost:52933
+Read port: 52956
+1676243004448	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofile2AHKu5\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52933/devtools/browser/fdbef309-f939-457b-a3c0-3078e0b664cf
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676243015582	Marionette	INFO	Stopped listening on port 52956
+1676243073806	geckodriver	INFO	Listening on 127.0.0.1:53165
+1676243076865	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53166" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileol4FHh"
+1676243077153	Marionette	INFO	Marionette enabled
+1676243077156	Marionette	INFO	Listening on port 53177
+WebDriver BiDi listening on ws://localhost:53166
+Read port: 53177
+1676243077247	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileol4FHh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53166/devtools/browser/ae838a26-0a89-4f25-936a-20f10099778b
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676243088459	Marionette	INFO	Stopped listening on port 53177
+1676243179105	geckodriver	INFO	Listening on 127.0.0.1:53423
+1676243182167	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53424" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofile05B7TH"
+1676243182448	Marionette	INFO	Marionette enabled
+1676243182451	Marionette	INFO	Listening on port 53434
+WebDriver BiDi listening on ws://localhost:53424
+Read port: 53434
+1676243182532	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofile05B7TH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53424/devtools/browser/4ead3296-78e5-47f7-8922-68421ae39b0e
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676243193652	Marionette	INFO	Stopped listening on port 53434
+1676243217502	geckodriver	INFO	Listening on 127.0.0.1:53584
+1676243220572	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53585" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileyRCFXR"
+1676243220849	Marionette	INFO	Marionette enabled
+1676243220853	Marionette	INFO	Listening on port 53595
+WebDriver BiDi listening on ws://localhost:53585
+Read port: 53595
+1676243220943	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofileyRCFXR\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53585/devtools/browser/1a761ed5-f39b-429c-b971-49a420c142cc
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676243232385	Marionette	INFO	Stopped listening on port 53595
+1676243285485	geckodriver	INFO	Listening on 127.0.0.1:53763
+1676243288556	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53764" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofilevnf259"
+1676243288838	Marionette	INFO	Marionette enabled
+1676243288841	Marionette	INFO	Listening on port 53775
+WebDriver BiDi listening on ws://localhost:53764
+Read port: 53775
+1676243288922	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofilevnf259\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53764/devtools/browser/afb04307-c6c6-42ec-9fe7-f7ed2b8a5371
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676243300480	Marionette	INFO	Stopped listening on port 53775
+1676243330946	geckodriver	INFO	Listening on 127.0.0.1:53933
+1676243334002	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53934" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofiler526na"
+1676243334280	Marionette	INFO	Marionette enabled
+1676243334283	Marionette	INFO	Listening on port 53945
+WebDriver BiDi listening on ws://localhost:53934
+Read port: 53945
+1676243334364	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofiler526na\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53934/devtools/browser/d2f89ad0-9684-427d-b47e-f7b6fc1ca7f4
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676243345631	Marionette	INFO	Stopped listening on port 53945
+1676243610229	geckodriver	INFO	Listening on 127.0.0.1:54437
+1676243613292	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54438" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofile9zShCS"
+1676243613575	Marionette	INFO	Marionette enabled
+1676243613578	Marionette	INFO	Listening on port 54448
+WebDriver BiDi listening on ws://localhost:54438
+Read port: 54448
+1676243613661	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofile9zShCS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54438/devtools/browser/28aebc76-ec7f-4bfc-8e37-44f59a435345
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676243626833	Marionette	INFO	Stopped listening on port 54448
+1676244378022	geckodriver	INFO	Listening on 127.0.0.1:56007
+1676244381096	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56008" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofiledhMPJ6"
+1676244381492	Marionette	INFO	Marionette enabled
+1676244381495	Marionette	INFO	Listening on port 56021
+WebDriver BiDi listening on ws://localhost:56008
+Read port: 56021
+1676244381581	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofiledhMPJ6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56008/devtools/browser/80a7ad35-863d-4567-a4df-5a5062300a54
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676244407298	Marionette	INFO	Stopped listening on port 56021
+!!! error running onStopped callback: TypeError: callback is not a function
+1676244432823	geckodriver	INFO	Listening on 127.0.0.1:56342
+1676244435890	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56343" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofiles5R2Dp"
+1676244436171	Marionette	INFO	Marionette enabled
+1676244436174	Marionette	INFO	Listening on port 56353
+WebDriver BiDi listening on ws://localhost:56343
+Read port: 56353
+1676244436257	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Sova\\AppData\\Local\\Temp\\rust_mozprofiles5R2Dp\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56343/devtools/browser/d53ea2c4-f14a-4fe4-9b63-813f2486fd86
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1676244449607	Marionette	INFO	Stopped listening on port 56353
