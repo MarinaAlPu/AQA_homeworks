@@ -1,14 +1,8 @@
-# Напишите автотест(!) на интернет-магазин
-import pytest
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
 
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
@@ -34,12 +28,9 @@ driver.find_element(By.CSS_SELECTOR, '#postal-code').send_keys("123456")
 
 driver.find_element(By.CSS_SELECTOR, '#continue').click()
 
-txt = driver.find_element(By.CSS_SELECTOR, 'div.summary_total_label').text
+result = driver.find_element(By.CSS_SELECTOR, 'div.summary_total_label').text
 
-# Закрыть браузер
-# driver.quit()
+driver.quit()
 
-@pytest.mark.parametrize( 'locator, result',
-    [('div.summary_total_label', "Total: $58.29")])
-def test_result_sum(locator, result):
-    assert driver.find_element(By.CSS_SELECTOR, locator).text == result
+def test_result():
+    assert result == "Total: $58.29"

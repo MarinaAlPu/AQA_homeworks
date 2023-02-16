@@ -16,4 +16,4 @@ def test_calculator():
 
     assert as_is == "15"
 
-    #browser.quit()
+    browser.quit()

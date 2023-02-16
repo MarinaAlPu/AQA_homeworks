@@ -25,8 +25,9 @@ driver.find_element(By.XPATH, '//*[text()="="]').click()
 
 waiter = WebDriverWait(driver, 46).until(EC.text_to_be_present_in_element( (By.CSS_SELECTOR, ".screen"), "15") )
 
-@pytest.mark.parametrize( 'locator',[('.screen')])
-def test_result(locator):
-    assert driver.find_element(By.CSS_SELECTOR, locator).text == "15"
+sum = driver.find_element(By.CSS_SELECTOR, '.screen').text
 
-#driver.quit()
+def test_result():
+    assert str(sum) == "15"
+
+driver.quit()

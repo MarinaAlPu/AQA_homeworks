@@ -32,10 +32,30 @@ driver.find_element(By.CSS_SELECTOR, 'button[type="submit"]').send_keys(Keys.ENT
 
 green = "rgba(209, 231, 221, 1)"
 red = "rgba(248, 215, 218, 1)"
-@pytest.mark.parametrize( 'locator, result',
-    [('#first-name', green), ('#last-name', green), ('#address', green), ('#zip-code', red), ('#city', green),
-     ('#country', green), ('#e-mail', green), ('#phone', green), ('#job-position', green), ("#company", green)])
-def test_background_color_green(locator, result):
-    assert driver.find_element(By.CSS_SELECTOR, locator).value_of_css_property("background-color") == result
 
-#driver.quit()
+first_name_color = driver.find_element(By.CSS_SELECTOR, '#first-name').value_of_css_property("background-color")
+last_name_color = driver.find_element(By.CSS_SELECTOR, '#last-name').value_of_css_property("background-color")
+address_color = driver.find_element(By.CSS_SELECTOR, '#address').value_of_css_property("background-color")
+zip_code_color = driver.find_element(By.CSS_SELECTOR, '#zip-code').value_of_css_property("background-color")
+city_color = driver.find_element(By.CSS_SELECTOR, '#city').value_of_css_property("background-color")
+country_color = driver.find_element(By.CSS_SELECTOR, '#country').value_of_css_property("background-color")
+e_mail_color = driver.find_element(By.CSS_SELECTOR, '#e-mail').value_of_css_property("background-color")
+phone_color = driver.find_element(By.CSS_SELECTOR, '#phone').value_of_css_property("background-color")
+job_position_color = driver.find_element(By.CSS_SELECTOR, '#job-position').value_of_css_property("background-color")
+company_color = driver.find_element(By.CSS_SELECTOR, '#company').value_of_css_property("background-color")
+
+def test_background_color_green():
+    assert first_name_color == green
+    assert last_name_color == green
+    assert address_color == green
+    assert city_color == green
+    assert country_color == green
+    assert e_mail_color == green
+    assert phone_color == green
+    assert job_position_color == green
+    assert company_color == green
+
+def test_background_color_red():
+    assert zip_code_color == red
+
+driver.quit()

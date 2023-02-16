@@ -48,4 +48,4 @@ def test_user_form():
     clr10 = user_page.get_color10()
     assert clr10 == green
 
-    #browser.quit()
+    browser.quit()

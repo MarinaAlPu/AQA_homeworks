@@ -28,6 +28,6 @@ def test_cart_caunter():
     total_page = TotalPage(browser)
     as_is = total_page.get_total()
 
-    assert as_is == "Total: $58.29"
+    browser.quit()
 
-    #browser.quit()
+    assert as_is == "Total: $58.29"
