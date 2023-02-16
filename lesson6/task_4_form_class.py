@@ -1,75 +1,44 @@
 class Users:
-    def __init__(self, firstName, lastName, address, zipCode, city, country, email, phoneNumber, jobPosition, company):
-        self.firstName = firstName
-        self.lastName = lastName
+    def __init__(self, first_name, last_name, address, zip_code, city, country, email, phone_number, job_position, company):
+        self.first_name = first_name
+        self.last_name = last_name
         self.address = address
-        self.zipCode = zipCode
+        self.zip_code = zip_code
         self.city = city
         self.country = country
         self.email = email
-        self.phoneNumber = phoneNumber
-        self.jobPosition = jobPosition
+        self.phone_number = phone_number
+        self.job_position = job_position
         self.company = company
 
-    def myFirstName(self):
-        return self.firstName
+    def my_first_name(self):
+        return self.first_name
     
-    def myLastName(self):
-        return self.lastName
+    def my_last_name(self):
+        return self.last_name
     
-    def myAddress(self):
+    def my_address(self):
         return self.address
     
-    def myZipCode(self):
-        return self.zipCode
+    def my_zip_code(self):
+        return self.zip_code
     
-    def myCity(self):
+    def my_city(self):
         return self.city
     
-    def myCountry(self):
+    def my_country(self):
         return self.country
      
-    def myEmail(self):
+    def my_email(self):
         return self.email
     
-    def myPhoneNumber(self):
-        return self.phoneNumber    
+    def my_phone_number(self):
+        return self.phone_number   
 
-    def myJobPosition(self):
-        return self.jobPosition
+    def my_job_position(self):
+        return self.job_position
     
-    def myCompany(self):
+    def my_company(self):
         return self.company
-    
-    # def test_background_color_green(locator):
-    # x = driver.find_element(By.CSS_SELECTOR, locator)
-    # y = x.value_of_css_property("background-color")
-    # print(y)
-    
 
 user = Users("Иван", "Петров", "Ленина, 55-3", "", "Москва", "Россия", "123@test.ru", "+79123456789", "QA", "SkyPro")
-
-# user.myFirstName()
-# user.myLastName()
-# user.myAddress()
-# user.myZipCode()
-# user.myCity()
-# user.myCountry()
-# user.myEmail()
-# user.myPhoneNumber()
-# user.myJobPosition()
-# user.myCompany()
-
-# print(user.myFirstName() + " " + 
-# user.myLastName() + ", " +  
-# user.myAddress() + ", " +  
-# user.myZipCode() + ", " +  
-# user.myCity() + ", " +  
-# user.myCountry() + ", " +  
-# user.myEmail() + ", " +
-# user.myPhoneNumber() + ", " +
-# user.myJobPosition() + " " +  
-# user.myCompany())
-
-# fn = str(user.myFirstName())
-# print(fn)
