@@ -1,9 +1,6 @@
 import requests
 
 base_url = "https://x-clients-be.onrender.com"
-company_id_for_url = 0
-my_employee_id = 0
-id_for_search = 0
 
 def test_get_employee():
     creds = { 
@@ -11,15 +8,9 @@ def test_get_employee():
         'password': 'animal-fairy'
     }
 
-    # global company_id_for_url
-    # global my_employee_id
-    # global id_for_search
-
     resp = requests.get(base_url + '/company')
     response_body = resp.json()
     print("Количество компаний:", len(response_body))
-
-    #response_body = resp.json()
     
     company_id_for_url = response_body[2]["id"]
 
