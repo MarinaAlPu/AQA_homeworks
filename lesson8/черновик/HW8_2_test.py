@@ -20,7 +20,7 @@ def test_get_employee():
     my_headers = {}
     my_headers['x-client-token'] = token
 
-    resp = requests.get(base_url + '/employee?company=' + 'company_id_for_url', headers = my_headers)
+    resp = requests.get(base_url + '/employee?company=', company_id_for_url, headers = my_headers)
     response_body = resp.json()
     print("Количество сотрудников в компании:", len(response_body))
     assert resp.status_code == 200
@@ -43,7 +43,7 @@ def test_get_employee():
     id_for_search = my_employee_id["id"]
     print("id нового сотрудника:", id_for_search) # для получения сотрудника по id
 
-    resp = requests.get(base_url + '/employee?company=' + 'company_id_for_url', headers = my_headers)
+    resp = requests.get(base_url + '/employee?company=', company_id_for_url, headers = my_headers)
     response_body = resp.json()
     print("Новое количество сотрудников", len(response_body))
     
@@ -66,7 +66,7 @@ def test_get_employee():
     print(my_employee_is_active)
 
     change_employee = {
-        'lastName': 'Petrov',
+        'lastName': 'Ivanov',
         'email': '123@test.ru',
         'url': 'some url',
         'isActive': True
@@ -90,7 +90,7 @@ def test_get_employee():
     print(my_employee_url1)
     print(my_employee_is_active1)
 
-    assert my_employee_last_name1 == my_employee_last_name
-    assert my_employee_email1 == my_employee_email
-    assert my_employee_url1 == my_employee_url
-    assert my_employee_is_active1 == True
+    assert my_employee_last_name1 == change_employee['lastName']
+    assert my_employee_email1 == change_employee['email']
+    assert my_employee_url1 == change_employee['url']
+    assert my_employee_is_active1 == change_employee['isActive']
