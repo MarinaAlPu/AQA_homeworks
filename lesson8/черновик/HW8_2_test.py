@@ -5,29 +5,15 @@ company_id_for_url = 0
 my_employee_id = 0
 id_for_search = 0
 
-# def test_get_company():
-#     resp = requests.get(base_url + '/company')
-
-#     response_body = resp.json()
-
-#     my_company = response_body[2]
-
-#     assert my_company["name"] == "Клининг-центр 'Клинг-кинг'"
-#     assert resp.status_code == 200
-#     assert resp.headers["Content-Type"] == "application/json; charset=utf-8"
-
-#     my_id = response_body[2]["id"]
-#     assert my_id == 3
-
 def test_get_employee():
     creds = { 
         'username':'roxy',
         'password': 'animal-fairy'
     }
 
-    global company_id_for_url
-    global my_employee_id
-    global id_for_search
+    # global company_id_for_url
+    # global my_employee_id
+    # global id_for_search
 
     resp = requests.get(base_url + '/company')
     response_body = resp.json()
@@ -64,7 +50,7 @@ def test_get_employee():
     print(my_employee_id)
 
     id_for_search = my_employee_id["id"]
-    print("id нового сотрудника:", id_for_search)
+    print("id нового сотрудника:", id_for_search) # для получения сотрудника по id
 
     resp = requests.get(base_url + '/employee?company=' + 'company_id_for_url', headers = my_headers)
     response_body = resp.json()
@@ -73,7 +59,7 @@ def test_get_employee():
     assert resp.status_code == 200
 
 # получить сотрудника по id
-    resp = requests.get(base_url + '/employee/2')#'+'id_for_search
+    resp = requests.get(base_url + '/employee/2')  #'+'id_for_search
     assert resp.status_code == 200
 
     print("Данные сотрудника до изменений")
