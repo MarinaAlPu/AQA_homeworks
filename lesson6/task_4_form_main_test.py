@@ -44,16 +44,22 @@ phone_color = driver.find_element(By.CSS_SELECTOR, '#phone').value_of_css_proper
 job_position_color = driver.find_element(By.CSS_SELECTOR, '#job-position').value_of_css_property("background-color")
 company_color = driver.find_element(By.CSS_SELECTOR, '#company').value_of_css_property("background-color")
 
-def test_background_color_green():
-    assert first_name_color == green
-    assert last_name_color == green
-    assert address_color == green
-    assert city_color == green
-    assert country_color == green
-    assert e_mail_color == green
-    assert phone_color == green
-    assert job_position_color == green
-    assert company_color == green
+# def test_background_color_green():
+#     assert first_name_color == green
+#     assert last_name_color == green
+#     assert address_color == green
+#     assert city_color == green
+#     assert country_color == green
+#     assert e_mail_color == green
+#     assert phone_color == green
+#     assert job_position_color == green
+#     assert company_color == green
+
+xxx = [first_name_color, last_name_color, address_color, city_color,
+ country_color, e_mail_color, phone_color, job_position_color, company_color]
+
+for x in xxx:
+    assert x == green
 
 def test_background_color_red():
     assert zip_code_color == red
