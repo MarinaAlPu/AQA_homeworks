@@ -203,7 +203,7 @@ def test_is_empty(text_in, result):
     [
     (["Sky", "Pro"], "Sky, Pro"),
     ])
-def test_list_to_string_positive1(lst, string_out):
+def test_list_to_string_positive_default(lst, string_out):
     stringUtils = StringUtils()
     res = stringUtils.list_to_string(lst)
     assert res ==  string_out
@@ -217,7 +217,7 @@ def test_list_to_string_positive1(lst, string_out):
     ([], "", ""),
     ([""], "", "")    
     ])
-def test_list_to_string_positive2(lst, joiner, string_out):
+def test_list_to_string_positive(lst, joiner, string_out):
     stringUtils = StringUtils()
     res = stringUtils.list_to_string(lst, joiner)
     assert res ==  string_out
