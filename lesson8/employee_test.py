@@ -726,6 +726,6 @@ def test_change_employee_without_fields():
 
     resp = requests.patch(base_url + '/employee/' + str(new_employee_id), json = change_employee, headers = my_headers)
     
-    assert resp.status_code == 400    
-
     employee_api.delete_company(company_id)
+
+    assert resp.status_code == 400    
