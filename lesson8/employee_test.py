@@ -728,4 +728,4 @@ def test_change_employee_without_fields():
     
     employee_api.delete_company(company_id)
 
-    assert resp.status_code == 400    
+    assert resp.status_code == 400   
