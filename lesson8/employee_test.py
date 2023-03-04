@@ -239,9 +239,9 @@ def test_add_employees(new_employee, status_code):
 
     resp = requests.post(base_url + "/employee", json=new_employee, headers = my_headers)
 
-    assert resp.status_code == status_code
-
     employee_api.delete_company(company_id) 
+
+    assert resp.status_code == status_code
 
 
 def test_add_employee_without_company_id():
@@ -271,9 +271,10 @@ def test_add_employee_without_company_id():
     }
 
     resp = requests.post(base_url + "/employee", json=new_employee, headers = my_headers)
-    assert resp.status_code == 400
 
     employee_api.delete_company(company_id)
+
+    assert resp.status_code == 400
 
 
 def test_add_employee_without_first_name():
@@ -303,9 +304,10 @@ def test_add_employee_without_first_name():
     }
 
     resp = requests.post(base_url + "/employee", json=new_employee, headers = my_headers)
-    assert resp.status_code == 400
 
-    employee_api.delete_company(company_id)
+    employee_api.delete_company(company_id)    
+
+    assert resp.status_code == 400
 
 
 def test_add_employee_without_last_name():
@@ -335,9 +337,10 @@ def test_add_employee_without_last_name():
     }
 
     resp = requests.post(base_url + "/employee", json=new_employee, headers = my_headers)
-    assert resp.status_code == 400
-
+    
     employee_api.delete_company(company_id)
+    
+    assert resp.status_code == 400
 
 
 def test_add_employee_without_middle_name():
@@ -367,9 +370,10 @@ def test_add_employee_without_middle_name():
     }
 
     resp = requests.post(base_url + "/employee", json=new_employee, headers = my_headers)
-    assert resp.status_code == 400
 
-    employee_api.delete_company(company_id)
+    employee_api.delete_company(company_id)    
+
+    assert resp.status_code == 400
 
 
 def test_add_employee_without_phone():
@@ -399,9 +403,10 @@ def test_add_employee_without_phone():
     }
 
     resp = requests.post(base_url + "/employee", json=new_employee, headers = my_headers)
-    assert resp.status_code == 400
 
-    employee_api.delete_company(company_id)
+    employee_api.delete_company(company_id) 
+
+    assert resp.status_code == 400
 
 
 def test_add_employee_without_url():
@@ -431,9 +436,10 @@ def test_add_employee_without_url():
     }
 
     resp = requests.post(base_url + "/employee", json=new_employee, headers = my_headers)
-    assert resp.status_code == 400
 
     employee_api.delete_company(company_id)
+
+    assert resp.status_code == 400
 
 
 def test_add_new_employee_without_fields():
@@ -457,9 +463,10 @@ def test_add_new_employee_without_fields():
     new_employee = {}
 
     resp = requests.post(base_url + "/employee", json=new_employee, headers = my_headers)
-    assert resp.status_code == 400
 
-    employee_api.delete_company(company_id)
+    employee_api.delete_company(company_id)   
+
+    assert resp.status_code == 400
 
 
 @pytest.mark.parametrize("change_employee, status_code",
@@ -502,10 +509,11 @@ def test_change_employees(change_employee, status_code):
     new_employee_id = new_body['id']
 
     resp = requests.patch(base_url + '/employee/' + str(new_employee_id), json = change_employee, headers = my_headers)
+    
+    employee_api.delete_company(company_id)
 
     assert resp.status_code == status_code
 
-    employee_api.delete_company(company_id)
 
 def test_change_employee_without_last_name():
     employee_api = Employee(base_url)
@@ -546,9 +554,9 @@ def test_change_employee_without_last_name():
 
     resp = requests.patch(base_url + '/employee/' + str(new_employee_id), json = change_employee, headers = my_headers)
 
-    assert resp.status_code == 400
-
     employee_api.delete_company(company_id)
+
+    assert resp.status_code == 400
 
 
 def test_change_employee_without_email():
@@ -590,9 +598,9 @@ def test_change_employee_without_email():
 
     resp = requests.patch(base_url + '/employee/' + str(new_employee_id), json = change_employee, headers = my_headers)
 
-    assert resp.status_code == 400
-
     employee_api.delete_company(company_id)
+
+    assert resp.status_code == 400
 
 
 def test_change_employee_without_url():
@@ -633,10 +641,10 @@ def test_change_employee_without_url():
     }
 
     resp = requests.patch(base_url + '/employee/' + str(new_employee_id), json = change_employee, headers = my_headers)
+    
+    employee_api.delete_company(company_id)
 
     assert resp.status_code == 400
-
-    employee_api.delete_company(company_id)
 
 
 def test_change_employee_without_is_active():
@@ -677,10 +685,10 @@ def test_change_employee_without_is_active():
     }
 
     resp = requests.patch(base_url + '/employee/' + str(new_employee_id), json = change_employee, headers = my_headers)
+    
+    employee_api.delete_company(company_id)
 
     assert resp.status_code == 400
-
-    employee_api.delete_company(company_id)
 
 
 def test_change_employee_without_fields():
@@ -717,7 +725,7 @@ def test_change_employee_without_fields():
     change_employee = {}
 
     resp = requests.patch(base_url + '/employee/' + str(new_employee_id), json = change_employee, headers = my_headers)
-
-    assert resp.status_code == 400
+    
+    assert resp.status_code == 400    
 
     employee_api.delete_company(company_id)
