@@ -217,11 +217,11 @@ def test_add_employees(new_employee, status_code):
 
     new_body = employee_api.add_new_company()
     company_id = new_body['id']
-    1 == 1
+
     resp = requests.post(base_url + "/employee", json=new_employee, headers = my_headers)
-    1 == 1
+
     employee_api.delete_company(company_id) 
-    1 == 1
+
     assert resp.status_code == status_code
 
 
