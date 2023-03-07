@@ -1,5 +1,8 @@
 from EmployeeApi import Employee
 from EmployeeTable import EmployeeTable
+from faker import Faker
+fake = Faker()
+fake_ru = Faker("ru_RU")
 
 base_url = "https://x-clients-be.onrender.com"
 employee_api = Employee(base_url)
@@ -16,7 +19,6 @@ def test_get_employee_list():
         db.add_employee(max_company_id)
 
     list_employee_api = employee_api.get_employee_list(max_company_id)
-
     list_employee_db = db.get_employee_list(max_company_id)
 
     db.delete_employee_by_company_id(max_company_id)
@@ -32,22 +34,22 @@ def test_add_new_employee():
     max_company_id = db.get_max_company_id()
 
     company_id = max_company_id
-    first_name = "Ivan"
-    last_name = "Ivanov"
-    middle_name = "Ivanych"
-    phone = "79123456789"
-    url = "his url"
+    first_name = fake_ru.first_name()
+    last_name = fake_ru.last_name()
+    middle_name = fake_ru.middle_name()
+    phone = fake.phone_number()
+    url = fake.url()
     new_employee_body = employee_api.add_new_employee(company_id, first_name, last_name, middle_name, phone, url)
     new_employee_id = new_employee_body['id']
 
     employee_from_db = db.get_employee_from_db(new_employee_id, max_company_id)
     employee = employee_from_db[0]
     assert employee[0] == new_employee_id
-    assert employee["first_name"] == "Ivan"
-    assert employee["last_name"] == "Ivanov"
-    assert employee["middle_name"] == "Ivanych"
-    assert employee["phone"] == "79123456789"
-    assert employee["avatar_url"] == "his url"
+    assert employee["first_name"] == first_name
+    assert employee["last_name"] == last_name
+    assert employee["middle_name"] == middle_name
+    assert employee["phone"] == phone
+    assert employee["avatar_url"] == url
 
     db.delete_employee_by_company_id(max_company_id)
     db.delete_company(max_company_id)
@@ -87,9 +89,9 @@ def test_change_info_employee():
     db.add_employee(max_company_id)
     max_employee_id = db.get_max_employee_id(max_company_id)
 
-    new_last_name = "Новая фамилия"
-    new_email = "new@test.ru"
-    new_url = "новый url"
+    new_last_name = fake_ru.last_name()
+    new_email = fake_ru.email()
+    new_url = fake_ru.url()
     new_is_active = True
     employee_api.change_employee_info(max_employee_id, new_last_name, new_email, new_url, new_is_active)
 
