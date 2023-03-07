@@ -36,11 +36,16 @@ class EmployeeTable:
 
     def get_max_company_id(self):
         return self.__db.execute(self.__my_scripts["get max company id"]).fetchall()[0][0]
-    
+
+    def format_numbers(self, phone_number):
+        phone_number = fake_ru.phone_number()
+        return '+7{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}'.format(*[i for i in phone_number if i.isdigit()][1:])
+
     def add_employee(self, id):
         return self.__db.execute(self.__my_scripts["insert new employee"],\
                                  first_name = fake_ru.first_name(), last_name = fake_ru.last_name(),\
-                                 middle_name = fake_ru.middle_name(), phone = fake.phone_number(),\
+                                 middle_name = fake_ru.middle_name(),\
+                                 phone = self.format_numbers(fake_ru.phone_number()),\
                                  email = fake.email(), url = fake.url(), company_id = id)
 
     def get_employee_from_db(self, new_employee_id, id):
