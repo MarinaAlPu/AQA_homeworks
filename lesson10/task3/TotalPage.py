@@ -13,6 +13,6 @@ class TotalPage:
         self.browser.maximize_window() 
 
     @allure.step("Извлечь из поля Total общую сумму заказа")
-    def get_total(self):
+    def get_total(self) -> str:
         txt = self.browser.find_element(By.CSS_SELECTOR, 'div.summary_total_label').text
         return txt

@@ -12,7 +12,7 @@ class NamePage:
         self.browser.maximize_window() 
 
     @allure.step("Ввести в поля ввода следующие персональные данные пользователя:")
-    def personal_data(self, first_name, last_name, postal_code):
+    def personal_data(self, first_name: str, last_name: str, postal_code: int) -> None:
         with allure.step("В поле 'First Name' ввести имя пользователя"):
             self.browser.find_element(By.CSS_SELECTOR, '#first-name').send_keys(first_name)
 

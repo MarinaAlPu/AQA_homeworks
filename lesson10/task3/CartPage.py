@@ -13,5 +13,5 @@ class CartPage:
         self.browser.maximize_window() 
 
     @allure.step("Нажать кнопку Checkout")
-    def checkout(self):
+    def checkout(self) -> None:
         self.browser.find_element(By.CSS_SELECTOR, '#checkout').click()

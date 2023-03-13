@@ -7,7 +7,7 @@ class ShopPage:
         self.browser = browser
 
     @allure.step("Добавить в корзину следующие товары:")
-    def add_product(self):
+    def add_product(self) -> None:
         with allure.step("Sauce Labs Backpack"):
             self.browser.find_element(By.CSS_SELECTOR, '#add-to-cart-sauce-labs-backpack').click()
 
