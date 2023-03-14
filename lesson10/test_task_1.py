@@ -16,8 +16,6 @@ from task1.UserPage import UserPage
 def test_user_form():
     browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
         
-    # with allure.step("Открыть страницу с формой ввода данных\
-    #                  по ссылке https://bonigarcia.dev/selenium-webdriver-java/data-types.html"):
     main_page = MainPage(browser)
         
     main_page.input_data()
