@@ -54,7 +54,6 @@ class EmployeeTest:
         self.db.add_company()
         max_company_id = self.db.get_max_company_id()
 
-        # with allure.step("Сгенерировать данные для создания сотрудника."):
         company_id = max_company_id
         first_name = fake_ru.first_name()
         last_name = fake_ru.last_name()
@@ -62,7 +61,6 @@ class EmployeeTest:
         phone = self.employee_api.format_numbers(fake_ru.phone_number())
         url = fake.url()
 
-        #with allure.step("Получить ответ на запрос на создание нового сотрудника через API."):
         new_employee_body = self.employee_api.add_new_employee(company_id, first_name, last_name, middle_name, phone, url)
         
         with allure.step("Получить id нового сотрудника."):
@@ -98,7 +96,6 @@ class EmployeeTest:
 
         self.db.add_employee(max_company_id)
 
-        # with allure.step("получить максимальный id сотрудника: {max_employee_id}"):
         max_employee_id = self.db.get_max_employee_id(max_company_id)
     
         employee_from_db = self.db.get_employee_from_db(max_employee_id, max_company_id)
@@ -154,37 +151,3 @@ class EmployeeTest:
 
         self.db.delete_employee_by_company_id(max_company_id)
         self.db.delete_company(max_company_id)
-
-    # @allure.story("Изменение информации о сотрудниках")
-    # @allure.title("Изменение информации о сотруднике в БД")
-    # @allure.description("Запрос на изменение информации о сотруднике по id сотрудника")
-    # @allure.feature("UPDATE")
-    # @allure.severity("normal")
-    # @allure.id("E-5")
-    # def test_change_employee_in_db(self):
-    #     with allure.step("Создать экземпляр класса Employee."):
-    #         self.employee_api = Employee(self.base_url)
-
-    #     self.db.add_company()
-    #     max_company_id = self.db.get_max_company_id()
-
-    #     self.db.add_employee(max_company_id)
-    #     max_employee_id = self.db.get_max_employee_id(max_company_id)
-
-    #     self.db.update_employee(max_employee_id, max_company_id)
-
-    #     body = self.employee_api.get_employee_info(max_employee_id)
-
-    #     employee_from_db = self.db.get_employee_from_db(max_employee_id, max_company_id)
-    #     employee = employee_from_db[0] 
-
-    #     with allure.step("Проверить, что данные сотрудника, изменённые в БД и полученные через API,\
-    #                     и данные сотрудника, полученные из БД, совпадают."):
-    #         assert body["companyId"] == employee["companyId"]
-    #         assert body["lastName"] == employee["last_name"]
-    #         assert body["isActive"] == employee["isActive"]
-    #         assert body["email"] == employee["email"]
-    #         assert body["avatar_url"] == employee["avatar_url"]
-
-    #     self.db.delete_employee_by_company_id(max_company_id)
-    #     self.db.delete_company(max_company_id)
